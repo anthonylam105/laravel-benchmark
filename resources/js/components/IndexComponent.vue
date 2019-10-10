@@ -23,7 +23,7 @@
 	        </div>
 
 	        <div class="links">
-	            <a v-if="loggedIn === true" href="/user/create">Create</a>
+	            <a v-if="loggedIn === true" href="/user/create">Create User</a>
 	        </div>
 	    </div>
     </div>

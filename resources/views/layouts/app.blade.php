@@ -21,18 +21,19 @@
 
     <style type="text/css">
         .create {
-            margin-top: 20px;
-            margin-left: 20px;
+           margin: 30px;
         }
         .create div {
             border-radius: 5px;
             background-color: #f2f2f2;
             padding: 20px;
         }
-        input[type=text] {
+        .create input[type=text] {
+            padding: 6px 12px;
             width: 100%;
         }
-        input[type=password] {
+        .create input[type=password] {
+            padding: 6px 12px;
             width: 100%;
         }
         .create button {
@@ -48,29 +49,30 @@
             color: red;
         }
         .showUser {
-            border: 2px solid #000;
-            border-radius: 5px;
+            margin: 0 25px;
+        }
+        .show-btns {
             text-align: center;
-            margin: auto;
-            width: 50%;
         }
         .showLink {
-            margin-left: 20px;
-            margin-bottom: 30px;
+            margin: 30px 0 30px 20px;
+            text-align: center;
         }
-        .showTitle {
-            color: #fff;
-            background-color: #000;
-            width: 100%;
+        .showLink a {
+            color: #636b6f;
+            padding: 0 25px;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            text-transform: uppercase;
         }
-        .showInfo {
-            padding-left: 25px;
-            text-align: left;
+        .showLink a:hover {
+            color: blue;
+            text-decoration: none;
         }
         .showUser button {
             border-radius: 4px;
             color: #000;
-            margin: 20px 0;
         }
         .showUser button:hover {
             background-color: #000;
@@ -96,7 +98,6 @@
         #users th {
           padding-top: 12px;
           padding-bottom: 12px;
-          text-align: left;
           background-color: #000;
           color: white;
         }
@@ -104,22 +105,23 @@
             background-color: #f2f2f2;
             border-radius: 5px;
             margin: 30px;
-            padding: 25px;
         }
         .userForm input[type=text] {
             border-radius: 3px;
-            padding: 6px 12px;
             margin-bottom: 10px;
+            padding: 6px 12px;
+            width: 100%;
         }
         .userForm label {
             font-weight: bold;
         }
+        .update-info {
+            padding: 20px;
+        }
         .edit-btns {
             display: flex;
             border-radius: 5px;
-            background-color: #f2f2f2;
-            margin: 30px;
-            padding: 25px;
+            padding: 20px;
         }
         .update-btn button {
             color: black;

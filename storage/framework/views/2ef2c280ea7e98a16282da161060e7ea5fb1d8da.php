@@ -96,7 +96,6 @@
             #users th {
               padding-top: 12px;
               padding-bottom: 12px;
-              text-align: left;
               background-color: #000;
               color: white;
             }

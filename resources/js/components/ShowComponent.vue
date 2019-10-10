@@ -1,20 +1,31 @@
 <template>
 	<div>
-		<div class="showLink">
-		  	<h2><a v-if="loggedIn === true" href="/user/create">Create User</a></h2>
-	  	</div>
 		<div class="showUser">
-			<div class="showTitle">
-				<h1>{{user.name}}'s Information</h1>
-			</div>
-			<div class="showInfo">
-				<h2>ID: {{user.id}}</h2>
-				<h2>Name: {{user.name}}</h2>
-				<h2>Email: {{user.email}}</h2>
-			</div>
-			<a :href="`/`"><button v-if="loggedIn === false" type="submit">Back</button></a>	
-			<a :href="`/user/${user.id}/edit`"><button v-if="loggedIn === true" type="submit">Edit</button></a>
-		</div>	
+
+			<h1>{{user.name}}'s Information</h1>
+
+			<table id="users">
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>Email</th>
+					<th class="show-btns" v-if="loggedIn === false">Back to List</th>
+					<th class="show-btns" v-if="loggedIn === true">Edit</th>
+				</tr>
+				<tr>
+					<td>{{user.id}}</td>
+					<td>{{user.name}}</td>
+					<td>{{user.email}}</td>
+					<td class="show-btns" v-if="loggedIn === false"><a :href="`/`"><button type="submit">Back</button></a></td>
+					<td class="show-btns" v-if="loggedIn === true"><a :href="`/user/${user.id}/edit`"><button type="submit">Edit</button></a></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="showLink">
+		  	<a v-if="loggedIn === true" href="/user/create">Create User</a>
+	  	</div>	
+
 	</div>
 </template>
 

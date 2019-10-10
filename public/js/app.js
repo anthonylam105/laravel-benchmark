@@ -1939,6 +1939,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['user_id'],
   data: function data() {
@@ -2095,6 +2099,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -38954,12 +38969,12 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h1", [_vm._v("Create New User")]),
-    _vm._v(" "),
     _c(
       "form",
       { staticClass: "create", attrs: { method: "POST", action: "/user" } },
       [
+        _c("h1", [_vm._v("Create New User")]),
+        _vm._v(" "),
         _vm._t("default"),
         _vm._v(" "),
         _c("p", [_vm._v("Please enter your information.")]),
@@ -39061,9 +39076,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "tableEdit" }, [
-      _c("h1", [
-        _vm._v("Updating " + _vm._s(_vm.user.name) + "'s Information")
-      ]),
+      _c("h1", [_vm._v("Update " + _vm._s(_vm.user.name) + "'s Information")]),
       _vm._v(" "),
       _c("table", { attrs: { id: "users" } }, [
         _vm._m(0),
@@ -39079,82 +39092,86 @@ var render = function() {
     _c("br"),
     _vm._v(" "),
     _c("div", { staticClass: "userForm" }, [
-      _c("label", { attrs: { for: "name" } }, [_vm._v("Update Name:")]),
-      _vm._v(" "),
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.user.name,
-            expression: "user.name"
-          }
-        ],
-        attrs: { type: "text", name: "name", placeholder: "Change Name" },
-        domProps: { value: _vm.user.name },
-        on: {
-          input: function($event) {
-            if ($event.target.composing) {
-              return
+      _c("div", { staticClass: "update-info" }, [
+        _c("label", { attrs: { for: "name" } }, [_vm._v("Update Name:")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.user.name,
+              expression: "user.name"
             }
-            _vm.$set(_vm.user, "name", $event.target.value)
-          }
-        }
-      }),
-      _vm._v(" "),
-      _c("label", { attrs: { for: "career" } }, [_vm._v("Update Email:")]),
-      _vm._v(" "),
-      _c("input", {
-        directives: [
-          {
-            name: "model",
-            rawName: "v-model",
-            value: _vm.user.email,
-            expression: "user.email"
-          }
-        ],
-        attrs: { type: "text", name: "email", placeholder: "Change Email" },
-        domProps: { value: _vm.user.email },
-        on: {
-          input: function($event) {
-            if ($event.target.composing) {
-              return
-            }
-            _vm.$set(_vm.user, "email", $event.target.value)
-          }
-        }
-      })
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "edit-btns" }, [
-      _c("div", { staticClass: "update-btn" }, [
-        _c(
-          "button",
-          {
-            attrs: { type: "submit" },
-            on: {
-              click: function($event) {
-                return _vm.updatePost()
+          ],
+          attrs: { type: "text", name: "name", placeholder: "Change Name" },
+          domProps: { value: _vm.user.name },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
               }
+              _vm.$set(_vm.user, "name", $event.target.value)
             }
-          },
-          [_vm._v("Update User")]
-        )
+          }
+        })
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "delete-btn" }, [
-        _c(
-          "button",
-          {
-            attrs: { type: "submit" },
-            on: {
-              click: function($event) {
-                return _vm.deletePost()
-              }
+      _c("div", { staticClass: "update-info" }, [
+        _c("label", { attrs: { for: "career" } }, [_vm._v("Update Email:")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.user.email,
+              expression: "user.email"
             }
-          },
-          [_vm._v("Delete User")]
-        )
+          ],
+          attrs: { type: "text", name: "email", placeholder: "Change Email" },
+          domProps: { value: _vm.user.email },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.user, "email", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "edit-btns" }, [
+        _c("div", { staticClass: "update-btn" }, [
+          _c(
+            "button",
+            {
+              attrs: { type: "submit" },
+              on: {
+                click: function($event) {
+                  return _vm.updatePost()
+                }
+              }
+            },
+            [_vm._v("Update User")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "delete-btn" }, [
+          _c(
+            "button",
+            {
+              attrs: { type: "submit" },
+              on: {
+                click: function($event) {
+                  return _vm.deletePost()
+                }
+              }
+            },
+            [_vm._v("Delete User")]
+          )
+        ])
       ])
     ])
   ])
@@ -39280,7 +39297,9 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "links" }, [
         _vm.loggedIn === true
-          ? _c("a", { attrs: { href: "/user/create" } }, [_vm._v("Create")])
+          ? _c("a", { attrs: { href: "/user/create" } }, [
+              _vm._v("Create User")
+            ])
           : _vm._e()
       ])
     ])
@@ -39320,40 +39339,56 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "showLink" }, [
-      _c("h2", [
-        _vm.loggedIn === true
-          ? _c("a", { attrs: { href: "/user/create" } }, [
-              _vm._v("Create User")
-            ])
-          : _vm._e()
+    _c("div", { staticClass: "showUser" }, [
+      _c("h1", [_vm._v(_vm._s(_vm.user.name) + "'s Information")]),
+      _vm._v(" "),
+      _c("table", { attrs: { id: "users" } }, [
+        _c("tr", [
+          _c("th", [_vm._v("ID")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("Name")]),
+          _vm._v(" "),
+          _c("th", [_vm._v("Email")]),
+          _vm._v(" "),
+          _vm.loggedIn === false
+            ? _c("th", { staticClass: "show-btns" }, [_vm._v("Back to List")])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.loggedIn === true
+            ? _c("th", { staticClass: "show-btns" }, [_vm._v("Edit")])
+            : _vm._e()
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c("td", [_vm._v(_vm._s(_vm.user.id))]),
+          _vm._v(" "),
+          _c("td", [_vm._v(_vm._s(_vm.user.name))]),
+          _vm._v(" "),
+          _c("td", [_vm._v(_vm._s(_vm.user.email))]),
+          _vm._v(" "),
+          _vm.loggedIn === false
+            ? _c("td", { staticClass: "show-btns" }, [
+                _c("a", { attrs: { href: "/" } }, [
+                  _c("button", { attrs: { type: "submit" } }, [_vm._v("Back")])
+                ])
+              ])
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.loggedIn === true
+            ? _c("td", { staticClass: "show-btns" }, [
+                _c("a", { attrs: { href: "/user/" + _vm.user.id + "/edit" } }, [
+                  _c("button", { attrs: { type: "submit" } }, [_vm._v("Edit")])
+                ])
+              ])
+            : _vm._e()
+        ])
       ])
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "showUser" }, [
-      _c("div", { staticClass: "showTitle" }, [
-        _c("h1", [_vm._v(_vm._s(_vm.user.name) + "'s Information")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "showInfo" }, [
-        _c("h2", [_vm._v("ID: " + _vm._s(_vm.user.id))]),
-        _vm._v(" "),
-        _c("h2", [_vm._v("Name: " + _vm._s(_vm.user.name))]),
-        _vm._v(" "),
-        _c("h2", [_vm._v("Email: " + _vm._s(_vm.user.email))])
-      ]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "/" } }, [
-        _vm.loggedIn === false
-          ? _c("button", { attrs: { type: "submit" } }, [_vm._v("Back")])
-          : _vm._e()
-      ]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "/user/" + _vm.user.id + "/edit" } }, [
-        _vm.loggedIn === true
-          ? _c("button", { attrs: { type: "submit" } }, [_vm._v("Edit")])
-          : _vm._e()
-      ])
+    _c("div", { staticClass: "showLink" }, [
+      _vm.loggedIn === true
+        ? _c("a", { attrs: { href: "/user/create" } }, [_vm._v("Create User")])
+        : _vm._e()
     ])
   ])
 }

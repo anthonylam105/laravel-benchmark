@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="tableEdit">
-	  		<h1>Updating {{user.name}}'s Information</h1>
+	  		<h1>Update {{user.name}}'s Information</h1>
 			<table id="users">
 				<tr>
 					<th>Name</th>
@@ -16,22 +16,26 @@
 
 		<br>
         <div class="userForm">
+    	    <div class="update-info">
 				<label for="name">Update Name:</label>
 				<input type="text" name="name" placeholder="Change Name" v-model="user.name">
+			</div>
 
+			<div class="update-info">
 				<label for="career">Update Email:</label>
 				<input type="text" name="email" placeholder="Change Email" v-model="user.email">
-		</div>
-
-		<div class="edit-btns">
-			<div class="update-btn">
-				<button type="submit" v-on:click="updatePost()">Update User</button>
 			</div>
-			<div class="delete-btn">
-				<button type="submit" v-on:click="deletePost()">Delete User</button>
-			</div>
-		</div>
 
+			<div class="edit-btns">
+				<div class="update-btn">
+					<button type="submit" v-on:click="updatePost()">Update User</button>
+				</div>
+				<div class="delete-btn">
+					<button type="submit" v-on:click="deletePost()">Delete User</button>
+				</div>
+			</div>
+
+		</div>
 	</div>
 </template>
 

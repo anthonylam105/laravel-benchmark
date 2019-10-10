@@ -1,7 +1,7 @@
 <template>
 	<div>
-	  	<h1>Create New User</h1>
 		<form class="create" method="POST" action="/user">
+	  		<h1>Create New User</h1>
 			
 			<slot></slot>
 
