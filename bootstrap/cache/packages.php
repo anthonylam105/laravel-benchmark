@@ -17,6 +17,13 @@
       0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
     ),
   ),
+  'laravel/passport' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Passport\\PassportServiceProvider',
+    ),
+  ),
   'laravel/tinker' => 
   array (
     'providers' => 
@@ -43,6 +50,17 @@
     'providers' => 
     array (
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    ),
+  ),
+  'spatie/laravel-fractal' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Fractal\\FractalServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Fractal' => 'Spatie\\Fractal\\FractalFacade',
     ),
   ),
 );
