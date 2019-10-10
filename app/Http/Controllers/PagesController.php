@@ -96,7 +96,7 @@ class PagesController extends Controller
 
     public function update($id) {
 
-         request()->validate([
+        request()->validate([
 
         //     'name' => 'required',
              'email' => 'unique:users' //Rule::unique('users')->ignore($id)
