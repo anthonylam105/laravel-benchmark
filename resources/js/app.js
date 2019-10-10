@@ -20,6 +20,25 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('index-component', require('./components/IndexComponent.vue').default);
+Vue.component('create-component', require('./components/CreateComponent.vue').default);
+Vue.component('show-component', require('./components/ShowComponent.vue').default);
+Vue.component('edit-component', require('./components/EditComponent.vue').default);
+
+Vue.component(
+    'passport-clients',
+    require('./components/passport/Clients.vue').default
+);
+
+Vue.component(
+    'passport-authorized-clients',
+    require('./components/passport/AuthorizedClients.vue').default
+);
+
+Vue.component(
+    'passport-personal-access-tokens',
+    require('./components/passport/PersonalAccessTokens.vue').default
+);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -19,8 +19,8 @@
 
                 <div>
                     <ul style="list-style: none;">
-                        <li><a href="/create">Create User</a></li>
-                        <li><a href="/show">List of Users</a></li>
+                        <li><a href="/user/create">Create User</a></li>
+                        <li><a href="/user">List of Users</a></li>
                     </ul>
                 </div>
 
