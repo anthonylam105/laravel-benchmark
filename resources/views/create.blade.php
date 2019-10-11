@@ -44,7 +44,7 @@
 	</form> -->
 
 	<div id="app">
-        <create-component>{{ csrf_field() }}</create-component>
+        <user-form>{{ csrf_field() }}</user-form>
     </div>
 
 

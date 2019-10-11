@@ -5,7 +5,7 @@
 @section('content')
 
 	<div id="app">
-        <edit-component user_id="{{ $id }}">{{ csrf_field() }}</edit-component>
+        <user-form user_id="{{ $id }}">{{ csrf_field() }}</user-form>
     </div>
 
 @endsection

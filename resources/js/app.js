@@ -23,7 +23,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('index-component', require('./components/IndexComponent.vue').default);
 Vue.component('create-component', require('./components/CreateComponent.vue').default);
 Vue.component('show-component', require('./components/ShowComponent.vue').default);
-Vue.component('edit-component', require('./components/EditComponent.vue').default);
+Vue.component('user-form', require('./components/UserForm.vue').default);
 
 Vue.component(
     'passport-clients',

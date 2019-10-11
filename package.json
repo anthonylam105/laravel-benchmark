@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "@midwestern/react-native-validation": "0.0.2",
         "gulp": "^4.0.2"
     }
 }

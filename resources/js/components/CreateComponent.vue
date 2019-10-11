@@ -1,30 +1,30 @@
 <template>
 	<div>
-		<form class="create" method="POST" action="/user">
+		<div class="create">
 	  		<h1>Create New User</h1>
 			
-			<slot></slot>
+			
 
 			<p>Please enter your information.</p>
 
 			<div>
 				<label>Username:</label>
-				<input type="text" name="name" placeholder="Username..." required>
+				<input type="text" name="name" placeholder="Username..." v-model="name" required>
 			</div>
 			<div>
 				<label>Email:</label>
-				<input type="text" name="email" placeholder="Email..." required>
+				<input type="text" name="email" placeholder="Email..." v-model="email" required>
 			</div>
 			<div>
 				<label>Password:</label>
-				<input id="myInput" type="password" name="password" placeholder="Password..." required>
+				<input id="myInput" type="password" name="password" placeholder="Password..." v-model="password" required>
 			</div>
 			<div>
-				<button type="submit">Create User</button>
+				<button type="submit" v-on:click="addPost()">Create User</button>
 			</div>
 
 			
-		</form>
+		</div>
 	</div>
 </template>
 
@@ -33,7 +33,10 @@
     	data() {
         	return {
         		loggedIn: false,
-        		users: []
+
+        		name: '',
+        		email: '',
+        		password: ''
         	}
         },
 
@@ -43,9 +46,13 @@
 
         methods: {
 	      	addPost() {
-	        	axios.post('/api/user')
+	        	axios.post('/api/users', {
+	        		name: this.name,
+	        		email: this.email,
+	        		password: this.password
+	        	})
 	        	.then((response) => {
-		            this.users = response.data.data
+		            window.location.href = '/user/' + response.data.data.id
 		        })
 	            .catch(function (error) {
 			        console.log(error);

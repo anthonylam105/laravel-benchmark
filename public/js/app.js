@@ -86,6 +86,460 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/@midwestern/react-native-validation/index.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@midwestern/react-native-validation/index.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _src_Validation_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/Validation.js */ "./node_modules/@midwestern/react-native-validation/src/Validation.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (_src_Validation_js__WEBPACK_IMPORTED_MODULE_0__["Validation"]);
+
+
+/***/ }),
+
+/***/ "./node_modules/@midwestern/react-native-validation/src/ErrorHandler/errorMessages/english.js":
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/@midwestern/react-native-validation/src/ErrorHandler/errorMessages/english.js ***!
+  \****************************************************************************************************/
+/*! exports provided: English */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "English", function() { return English; });
+let English = {
+  accepted: 'The :attribute must be accepted.',
+  active_url: 'The :attribute is not a valid URL.',
+  after: 'The :attribute must be a date after :date.',
+  after_or_equal: 'The :attribute must be a date after or equal to :date.',
+  alpha: 'The :attribute may only contain letters.',
+  alpha_dash: 'The :attribute may only contain letters, numbers, dashes and underscores.',
+  alpha_num: 'The :attribute may only contain letters and numbers.',
+  array: 'The :attribute must be an array.',
+  before: 'The :attribute must be a date before :date.',
+  before_or_equal: 'The :attribute must be a date before or equal to :date.',
+  between: {
+    numeric: 'The :attribute must be between :min and :max.',
+    file: 'The :attribute must be between :min and :max kilobytes.',
+    string: 'The :attribute must be between :min and :max characters.',
+    array: 'The :attribute must have between :min and :max items.'
+  },
+  boolean: 'The :attribute field must be true or false.',
+  confirmed: 'The :attribute confirmation does not match.',
+  date: 'The :attribute is not a valid date.',
+  date_equals: 'The :attribute must be a date equal to :date.',
+  date_format: 'The :attribute does not match the format :format.',
+  different: 'The :attribute and :other must be different.',
+  digits: 'The :attribute must be :digits digits.',
+  digits_between: 'The :attribute must be between :min and :max digits.',
+  dimensions: 'The :attribute has invalid image dimensions.',
+  distinct: 'The :attribute field has a duplicate value.',
+  email: 'The :attribute must be a valid email address.',
+  exists: 'The selected :attribute is invalid.',
+  file: 'The :attribute must be a file.',
+  filled: 'The :attribute field must have a value.',
+  gt: {
+    numeric: 'The :attribute must be greater than :value.',
+    file: 'The :attribute must be greater than :value kilobytes.',
+    string: 'The :attribute must be greater than :value characters.',
+    array: 'The :attribute must have more than :value items.'
+  },
+  gte: {
+    numeric: 'The :attribute must be greater than or equal :value.',
+    file: 'The :attribute must be greater than or equal :value kilobytes.',
+    string: 'The :attribute must be greater than or equal :value characters.',
+    array: 'The :attribute must have :value items or more.'
+  },
+  image: 'The :attribute must be an image.',
+  in: 'The selected :attribute is invalid.',
+  in_array: 'The :attribute field does not exist in :other.',
+  integer: 'The :attribute must be an integer.',
+  ip: 'The :attribute must be a valid IP address.',
+  ipv4: 'The :attribute must be a valid IPv4 address.',
+  ipv6: 'The :attribute must be a valid IPv6 address.',
+  json: 'The :attribute must be a valid JSON string.',
+  lt: {
+    numeric: 'The :attribute must be less than :value.',
+    file: 'The :attribute must be less than :value kilobytes.',
+    string: 'The :attribute must be less than :value characters.',
+    array: 'The :attribute must have less than :value items.'
+  },
+  lte: {
+    numeric: 'The :attribute must be less than or equal :value.',
+    file: 'The :attribute must be less than or equal :value kilobytes.',
+    string: 'The :attribute must be less than or equal :value characters.',
+    array: 'The :attribute must not have more than :value items.'
+  },
+  max: {
+    numeric: 'The :attribute may not be greater than :max.',
+    file: 'The :attribute may not be greater than :max kilobytes.',
+    string: 'The :attribute may not be greater than :max characters.',
+    array: 'The :attribute may not have more than :max items.'
+  },
+  mimes: 'The :attribute must be a file of type: :values.',
+  mimetypes: 'The :attribute must be a file of type: :values.',
+  min: {
+    numeric: 'The :attribute must be at least :min.',
+    file: 'The :attribute must be at least :min kilobytes.',
+    string: 'The :attribute must be at least :min characters.',
+    array: 'The :attribute must have at least :min items.'
+  },
+  not_in: 'The selected :attribute is invalid.',
+  not_regex: 'The :attribute format is invalid.',
+  numeric: 'The :attribute must be a number.',
+  present: 'The :attribute field must be present.',
+  regex: 'The :attribute format is invalid.',
+  required: 'The :attribute field is required.',
+  required_if: 'The :attribute field is required when :other is :value.',
+  required_unless: 'The :attribute field is required unless :other is in :values.',
+  required_with: 'The :attribute field is required when :values is present.',
+  required_with_all: 'The :attribute field is required when :values are present.',
+  required_without: 'The :attribute field is required when :values is not present.',
+  required_without_all: 'The :attribute field is required when none of :values are present.',
+  same: 'The :attribute and :other must match.',
+  size: {
+    numeric: 'The :attribute must be :size.',
+    file: 'The :attribute must be :size kilobytes.',
+    string: 'The :attribute must be :size characters.',
+    array: 'The :attribute must contain :size items.'
+  },
+  starts_with: 'The :attribute must start with one of the following: :values',
+  string: 'The :attribute must be a string.',
+  timezone: 'The :attribute must be a valid zone.',
+  unique: 'The :attribute has already been taken.',
+  uploaded: 'The :attribute failed to upload.',
+  url: 'The :attribute format is invalid.',
+  uuid: 'The :attribute must be a valid UUID.'
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@midwestern/react-native-validation/src/ErrorHandler/errorMessages/index.js":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/@midwestern/react-native-validation/src/ErrorHandler/errorMessages/index.js ***!
+  \**************************************************************************************************/
+/*! exports provided: ErrorMessages */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ErrorMessages", function() { return ErrorMessages; });
+/* harmony import */ var _english__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./english */ "./node_modules/@midwestern/react-native-validation/src/ErrorHandler/errorMessages/english.js");
+
+
+let ErrorMessages = {
+  english: _english__WEBPACK_IMPORTED_MODULE_0__["English"]
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@midwestern/react-native-validation/src/ErrorHandler/index.js":
+/*!************************************************************************************!*\
+  !*** ./node_modules/@midwestern/react-native-validation/src/ErrorHandler/index.js ***!
+  \************************************************************************************/
+/*! exports provided: ErrorHandler */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ErrorHandler", function() { return ErrorHandler; });
+/* harmony import */ var _errorMessages__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./errorMessages */ "./node_modules/@midwestern/react-native-validation/src/ErrorHandler/errorMessages/index.js");
+
+
+class ErrorHandler {
+  constructor () {
+    this.defaultLanguage = 'english'
+    this.currentLanguage = null
+
+    this.errorMessages = _errorMessages__WEBPACK_IMPORTED_MODULE_0__["ErrorMessages"]
+  }
+
+  extend (languageObject) {
+    this.errorMessages[languageObject.language] = languageObject.errorMessages
+  }
+
+  setLanguage (language) {
+    if (this.errorMessages.hasOwnProperty(language)) {
+      this.currentLanguage = language
+    }
+  }
+
+  patchLanguages (field, languagePatch) {
+    for (let language of Object.keys(languagePatch)) {
+      this.errorMessages[language] = { ...this.errorMessages[language], ...{ [field]: languagePatch[language] } }
+    }
+  }
+
+ 	generate (rule, ruleParams) {
+    let message = this.errorMessages[this.currentLanguage || this.defaultLanguage][rule]
+    let fieldName = ruleParams.field.replace('_', ' ').replace(/\b\w/g, l => l.toLowerCase())
+
+    message = typeof message !== 'object' ? message.replace(':attribute', fieldName) :  message[typeof fieldName].replace(':attribute', fieldName)
+
+    for (let param of ruleParams.params) {
+      message = message.replace('VAR1', param)
+    }
+
+ 		return message
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@midwestern/react-native-validation/src/Validation.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@midwestern/react-native-validation/src/Validation.js ***!
+  \****************************************************************************/
+/*! exports provided: Validation */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Validation", function() { return Validation; });
+/* harmony import */ var _ValidationRules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ValidationRules */ "./node_modules/@midwestern/react-native-validation/src/ValidationRules/index.js");
+/* harmony import */ var _ErrorHandler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ErrorHandler */ "./node_modules/@midwestern/react-native-validation/src/ErrorHandler/index.js");
+
+
+
+class Validation {
+  constructor (rules) {
+    this.rules = rules
+    this.errorHandler = new _ErrorHandler__WEBPACK_IMPORTED_MODULE_1__["ErrorHandler"]()
+  }
+
+  extendRules (ruleObject) {
+    if (ruleObject.hasOwnProperty('ruleName') && ruleObject.hasOwnProperty('method') && ruleObject.hasOwnProperty('ruleName')) {
+      _ValidationRules__WEBPACK_IMPORTED_MODULE_0__["ValidationRules"].prototype[ruleObject.ruleName] = ruleObject.method
+
+      if (typeof ruleObject.errorMessage === 'object') {
+        this.errorHandler.patchLanguages(ruleObject.ruleName, ruleObject.errorMessage)
+      } else {
+        this.errorHandler.patchLanguages(ruleObject.ruleName, { [this.errorHandler.defaultLanguage]: ruleObject.errorMessage })
+      }
+    } else {
+      console.warn('React Native Validation: passed invalid rule object')
+    }
+  }
+
+  extendLanguages (languageObject) {
+    this.errorHandler.extend(languageObject)
+  }
+
+  setLanguage (language) {
+    this.errorHandler.setLanguage(language)
+  }
+
+  validate (fields) {
+    return new Promise((resolve, reject) => {
+      let errors = {}
+
+      const validationRules = new _ValidationRules__WEBPACK_IMPORTED_MODULE_0__["ValidationRules"](this.rules, fields)
+
+      for (let field of Object.keys(this.rules)) {
+        for (let ruleStatement of this.rules[field].split('|')) {
+          const rule = ruleStatement.split(':')[0]
+          const parameters = ruleStatement.split(':').slice(1)
+
+          const results = validationRules.call(rule)(field, fields[field], ...parameters)
+          if (results === false) {
+            if (errors.hasOwnProperty(field) === false) {
+              errors[field] = []
+            }
+
+            errors[field].push(this.errorHandler.generate(rule, { field: field, params: parameters }))
+          } else if (results !== true) {
+            break
+          }
+        }
+      }
+
+      if (Object.keys(errors).length) {
+        reject(errors)
+      } else {
+        resolve()
+      }
+    })
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@midwestern/react-native-validation/src/ValidationRules/DefaultRules.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/@midwestern/react-native-validation/src/ValidationRules/DefaultRules.js ***!
+  \**********************************************************************************************/
+/*! exports provided: DefaultRules */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DefaultRules", function() { return DefaultRules; });
+class DefaultRules {
+  sometimes (fieldName, value) {
+    if (this.dataset[fieldName] !== undefined) {
+      return true
+    }
+  }
+
+  required (fieldName, value) {
+    return value !== undefined && value !== null && (value > 0 || value.length > 0)
+  }
+
+  alpha (fieldName, value) {
+    return value.match(/^[a-z]+$/i) !== null
+  }
+
+  alpha_dash (fieldName, value) {
+    return value.match(/^[a-z_-]+$/i) !== null
+  }
+
+  alpha_num (fieldName, value) {
+    return value.match(/^[a-z0-9]+$/i) !== null
+  }
+
+  email (fieldName, value) {
+    return value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) !== null
+  }
+
+  min (fieldName, value, length) {
+    return value.length > length
+  }
+
+  max (fieldName, value, length) {
+    return value.length < length
+  }
+
+  string (fieldName, value) {
+    return typeof value === 'string'
+  }
+
+  confirmed (fieldName, value) {
+    return value === this.dataset[fieldName + '_confirmation']
+  }
+
+  in (fieldName, value, options) {
+    return options.split(',').indexOf(value) !== -1
+  }
+
+  not_in (fieldName, value, options) {
+    return options.split(',').indexOf(value) === -1
+  }
+
+  integer (fieldName, value) {
+    return typeof value === 'number'
+  }
+
+  json (fieldName, value) {
+    try {
+      JSON.parse(value)
+    } catch (e) {
+      return false
+    }
+
+    return true
+  }
+
+  digits (fieldName, value, length) {
+    return typeof value === 'number' && String(value).length === length
+  }
+
+  digits_between (fieldName, value, min, max) {
+    return typeof value === 'number' && String(value).length > min && String(value).length < max
+  }
+
+  accepted (fieldName, value) {
+    return [1, 'yes', 'on', true].indexOf(value) !== -1
+  }
+
+  between (fieldName, value, min, max) {
+    return value > min && value < max
+  }
+
+  boolean (fieldName, value) {
+    return [true, false, 1, 0, '1', '0'].indexOf(value) !== -1
+  }
+
+  different (fieldName, value, otherFieldName) {
+    return value !== this.dataset[otherFieldName]
+  }
+
+  same (fieldName, value, otherFieldName) {
+    return value === this.dataset[otherFieldName]
+  }
+
+  filled (fieldName, value) {
+    if (this.dataset[fieldName] !== undefined) {
+      return value !== undefined && value.length > 0
+    }
+  }
+
+  present (fieldName, value) {
+    return this.dataset[fieldName] !== undefined
+  }
+
+  gt (fieldName, value, otherFieldName) {
+    return value > this.dataset[otherFieldName]
+  }
+
+  gte (fieldName, value, otherFieldName) {
+    return value >= this.dataset[otherFieldName]
+  }
+
+  lt (fieldName, value, otherFieldName) {
+    return value < this.dataset[otherFieldName]
+  }
+
+  lte (fieldName, value, otherFieldName) {
+    return value <= this.dataset[otherFieldName]
+  }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@midwestern/react-native-validation/src/ValidationRules/index.js":
+/*!***************************************************************************************!*\
+  !*** ./node_modules/@midwestern/react-native-validation/src/ValidationRules/index.js ***!
+  \***************************************************************************************/
+/*! exports provided: ValidationRules */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ValidationRules", function() { return ValidationRules; });
+/* harmony import */ var _DefaultRules__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DefaultRules */ "./node_modules/@midwestern/react-native-validation/src/ValidationRules/DefaultRules.js");
+
+
+class ValidationRules extends _DefaultRules__WEBPACK_IMPORTED_MODULE_0__["DefaultRules"] {
+  constructor (dataset = {}) {
+    super()
+
+    this.dataset = dataset
+  }
+
+  call (rule) {
+    if (typeof this[rule] === 'function') {
+  	 return this[rule].bind(this)
+    } else {
+      console.warn('React Native Validation: called unknown validation rule "' + rule + '"')
+      return () => { return true }
+    }
+  }
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/axios/index.js":
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
@@ -1872,7 +2326,9 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       loggedIn: false,
-      users: []
+      name: '',
+      email: '',
+      password: ''
     };
   },
   mounted: function mounted() {
@@ -1880,107 +2336,12 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     addPost: function addPost() {
-      var _this = this;
-
-      axios.post('/api/user').then(function (response) {
-        _this.users = response.data.data;
-      })["catch"](function (error) {
-        console.log(error);
-      });
-    }
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/EditComponent.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/EditComponent.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['user_id'],
-  data: function data() {
-    return {
-      loggedIn: false,
-      user: []
-    };
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    console.log('Edit Component mounted.');
-    axios.get('/api/logged-in').then(function (response) {
-      console.log(response);
-      _this.loggedIn = response.data.response;
-      axios.get('/api/users/' + _this.user_id).then(function (response) {
-        _this.user = response.data.data;
-      })["catch"](function (error) {
-        console.log(error);
-      });
-    });
-  },
-  methods: {
-    updatePost: function updatePost() {
-      var _this2 = this;
-
-      axios.patch('/api/users/' + this.user_id, this.user).then(function (response) {
-        window.location.href = '/user/' + _this2.user_id;
-      })["catch"](function (error) {
-        console.log(error);
-      });
-    },
-    deletePost: function deletePost() {
-      var _this3 = this;
-
-      axios["delete"]('/api/users/' + this.user_id).then(function (response) {
-        _this3.users = response.data.data;
-        window.location.href = '/user/';
+      axios.post('/api/users', {
+        name: this.name,
+        email: this.email,
+        password: this.password
+      }).then(function (response) {
+        window.location.href = '/user/' + response.data.data.id;
       })["catch"](function (error) {
         console.log(error);
       });
@@ -2151,6 +2512,146 @@ __webpack_require__.r(__webpack_exports__);
         console.log(error);
       });
     });
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UserForm.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/UserForm.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _midwestern_react_native_validation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @midwestern/react-native-validation */ "./node_modules/@midwestern/react-native-validation/index.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['user_id'],
+  data: function data() {
+    return {
+      loggedIn: false,
+      user: {
+        name: '',
+        email: '',
+        password: ''
+      },
+      errors: {//
+      }
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    if (this.user_id) {
+      axios.get('/api/logged-in').then(function (response) {
+        console.log(response);
+        _this.loggedIn = response.data.response;
+        axios.get('/api/users/' + _this.user_id).then(function (response) {
+          _this.user = response.data.data;
+        })["catch"](function (error) {
+          console.log(error);
+        });
+      });
+    }
+  },
+  methods: {
+    submit: function submit() {
+      var _this2 = this;
+
+      var Validator = new _midwestern_react_native_validation__WEBPACK_IMPORTED_MODULE_0__["default"]({
+        name: 'required|alpha|max:255',
+        email: 'required|string|email',
+        password: this.user_id === undefined ? 'required|string|min:7' : ''
+      });
+      Validator.validate(this.user).then(function () {
+        // success
+        var formData = _objectSpread({}, _this2.user, {}, {
+          '_method': _this2.user_id != null ? 'PATCH' : 'POST'
+        });
+
+        axios.post('/api/users/' + (_this2.user_id || ''), formData).then(function (response) {
+          window.location.href = '/user/' + response.data.data.id;
+        })["catch"](function (error) {
+          console.log(error);
+        });
+      })["catch"](function (errors) {
+        _this2.errors = errors;
+        console.log(errors);
+      });
+    },
+    deletePost: function deletePost() {
+      var _this3 = this;
+
+      axios["delete"]('/api/users/' + this.user_id).then(function (response) {
+        _this3.users = response.data.data;
+        window.location.href = '/user/';
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    }
   }
 });
 
@@ -38969,225 +39470,120 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c(
-      "form",
-      { staticClass: "create", attrs: { method: "POST", action: "/user" } },
-      [
-        _c("h1", [_vm._v("Create New User")]),
-        _vm._v(" "),
-        _vm._t("default"),
-        _vm._v(" "),
-        _c("p", [_vm._v("Please enter your information.")]),
-        _vm._v(" "),
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _vm._m(2),
-        _vm._v(" "),
-        _vm._m(3)
-      ],
-      2
-    )
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("label", [_vm._v("Username:")]),
+    _c("div", { staticClass: "create" }, [
+      _c("h1", [_vm._v("Create New User")]),
       _vm._v(" "),
-      _c("input", {
-        attrs: {
-          type: "text",
-          name: "name",
-          placeholder: "Username...",
-          required: ""
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("label", [_vm._v("Email:")]),
+      _c("p", [_vm._v("Please enter your information.")]),
       _vm._v(" "),
-      _c("input", {
-        attrs: {
-          type: "text",
-          name: "email",
-          placeholder: "Email...",
-          required: ""
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("label", [_vm._v("Password:")]),
-      _vm._v(" "),
-      _c("input", {
-        attrs: {
-          id: "myInput",
-          type: "password",
-          name: "password",
-          placeholder: "Password...",
-          required: ""
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("button", { attrs: { type: "submit" } }, [_vm._v("Create User")])
-    ])
-  }
-]
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/EditComponent.vue?vue&type=template&id=ad065790&":
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/EditComponent.vue?vue&type=template&id=ad065790& ***!
-  \****************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", { staticClass: "tableEdit" }, [
-      _c("h1", [_vm._v("Update " + _vm._s(_vm.user.name) + "'s Information")]),
-      _vm._v(" "),
-      _c("table", { attrs: { id: "users" } }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("tr", [
-          _c("td", [_vm._v(_vm._s(_vm.user.name))]),
-          _vm._v(" "),
-          _c("td", [_vm._v(_vm._s(_vm.user.email))])
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
-    _c("div", { staticClass: "userForm" }, [
-      _c("div", { staticClass: "update-info" }, [
-        _c("label", { attrs: { for: "name" } }, [_vm._v("Update Name:")]),
+      _c("div", [
+        _c("label", [_vm._v("Username:")]),
         _vm._v(" "),
         _c("input", {
           directives: [
             {
               name: "model",
               rawName: "v-model",
-              value: _vm.user.name,
-              expression: "user.name"
+              value: _vm.name,
+              expression: "name"
             }
           ],
-          attrs: { type: "text", name: "name", placeholder: "Change Name" },
-          domProps: { value: _vm.user.name },
+          attrs: {
+            type: "text",
+            name: "name",
+            placeholder: "Username...",
+            required: ""
+          },
+          domProps: { value: _vm.name },
           on: {
             input: function($event) {
               if ($event.target.composing) {
                 return
               }
-              _vm.$set(_vm.user, "name", $event.target.value)
+              _vm.name = $event.target.value
             }
           }
         })
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "update-info" }, [
-        _c("label", { attrs: { for: "career" } }, [_vm._v("Update Email:")]),
+      _c("div", [
+        _c("label", [_vm._v("Email:")]),
         _vm._v(" "),
         _c("input", {
           directives: [
             {
               name: "model",
               rawName: "v-model",
-              value: _vm.user.email,
-              expression: "user.email"
+              value: _vm.email,
+              expression: "email"
             }
           ],
-          attrs: { type: "text", name: "email", placeholder: "Change Email" },
-          domProps: { value: _vm.user.email },
+          attrs: {
+            type: "text",
+            name: "email",
+            placeholder: "Email...",
+            required: ""
+          },
+          domProps: { value: _vm.email },
           on: {
             input: function($event) {
               if ($event.target.composing) {
                 return
               }
-              _vm.$set(_vm.user, "email", $event.target.value)
+              _vm.email = $event.target.value
             }
           }
         })
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "edit-btns" }, [
-        _c("div", { staticClass: "update-btn" }, [
-          _c(
-            "button",
-            {
-              attrs: { type: "submit" },
-              on: {
-                click: function($event) {
-                  return _vm.updatePost()
-                }
-              }
-            },
-            [_vm._v("Update User")]
-          )
-        ]),
+      _c("div", [
+        _c("label", [_vm._v("Password:")]),
         _vm._v(" "),
-        _c("div", { staticClass: "delete-btn" }, [
-          _c(
-            "button",
+        _c("input", {
+          directives: [
             {
-              attrs: { type: "submit" },
-              on: {
-                click: function($event) {
-                  return _vm.deletePost()
-                }
+              name: "model",
+              rawName: "v-model",
+              value: _vm.password,
+              expression: "password"
+            }
+          ],
+          attrs: {
+            id: "myInput",
+            type: "password",
+            name: "password",
+            placeholder: "Password...",
+            required: ""
+          },
+          domProps: { value: _vm.password },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
               }
-            },
-            [_vm._v("Delete User")]
-          )
-        ])
+              _vm.password = $event.target.value
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", [
+        _c(
+          "button",
+          {
+            attrs: { type: "submit" },
+            on: {
+              click: function($event) {
+                return _vm.addPost()
+              }
+            }
+          },
+          [_vm._v("Create User")]
+        )
       ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("tr", [
-      _c("th", [_vm._v("Name")]),
-      _vm._v(" "),
-      _c("th", [_vm._v("Email")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -39393,6 +39789,200 @@ var render = function() {
   ])
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UserForm.vue?vue&type=template&id=08a5751a&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/UserForm.vue?vue&type=template&id=08a5751a& ***!
+  \***********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _vm.user_id != null
+      ? _c("div", { staticClass: "tableEdit" }, [
+          _c("h1", [_vm._v("Update Information")]),
+          _vm._v(" "),
+          _c("table", { attrs: { id: "users" } }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c("tr", [
+              _c("td", [_vm._v(_vm._s(_vm.user.name))]),
+              _vm._v(" "),
+              _c("td", [_vm._v(_vm._s(_vm.user.email))])
+            ])
+          ])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.user_id == null
+      ? _c("div", { staticClass: "create" }, [
+          _c("h1", [_vm._v("Create New User")])
+        ])
+      : _vm._e(),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _c("div", { staticClass: "userForm" }, [
+      _c("div", { staticClass: "update-info" }, [
+        _c("label", [_vm._v("Name:")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.user.name,
+              expression: "user.name"
+            }
+          ],
+          attrs: { type: "text", placeholder: "Enter Name" },
+          domProps: { value: _vm.user.name },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.user, "name", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _vm.errors.name
+          ? _c("label", { staticClass: "errorMsg" }, [
+              _vm._v("Error: " + _vm._s(_vm.errors.name[0]))
+            ])
+          : _vm._e()
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "update-info" }, [
+        _c("label", [_vm._v("Email:")]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.user.email,
+              expression: "user.email"
+            }
+          ],
+          attrs: { type: "text", placeholder: "Enter Email" },
+          domProps: { value: _vm.user.email },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.user, "email", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _vm.errors.email
+          ? _c("label", { staticClass: "errorMsg" }, [
+              _vm._v("Error: " + _vm._s(_vm.errors.email[0]))
+            ])
+          : _vm._e()
+      ]),
+      _vm._v(" "),
+      _vm.user_id == null
+        ? _c("div", { staticClass: "update-info" }, [
+            _c("label", [_vm._v("Password:")]),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.user.password,
+                  expression: "user.password"
+                }
+              ],
+              attrs: { type: "password", placeholder: "Enter Password" },
+              domProps: { value: _vm.user.password },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.user, "password", $event.target.value)
+                }
+              }
+            }),
+            _vm._v(" "),
+            _vm.errors.password
+              ? _c("label", { staticClass: "errorMsg" }, [
+                  _vm._v("Error: " + _vm._s(_vm.errors.password[0]))
+                ])
+              : _vm._e()
+          ])
+        : _vm._e(),
+      _vm._v(" "),
+      _c("div", { staticClass: "edit-btns" }, [
+        _c("div", { staticClass: "update-btn" }, [
+          _c(
+            "button",
+            {
+              attrs: { type: "submit" },
+              on: {
+                click: function($event) {
+                  return _vm.submit()
+                }
+              }
+            },
+            [
+              _vm._v(
+                _vm._s(_vm.user_id != null ? "Update" : "Create") + " User"
+              )
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _vm.user_id != null
+          ? _c("div", { staticClass: "delete-btn" }, [
+              _c(
+                "button",
+                {
+                  attrs: { type: "submit" },
+                  on: {
+                    click: function($event) {
+                      return _vm.deletePost()
+                    }
+                  }
+                },
+                [_vm._v("Delete User")]
+              )
+            ])
+          : _vm._e()
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("th", [_vm._v("Name")]),
+      _vm._v(" "),
+      _c("th", [_vm._v("Email")])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -52631,7 +53221,7 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 Vue.component('index-component', __webpack_require__(/*! ./components/IndexComponent.vue */ "./resources/js/components/IndexComponent.vue")["default"]);
 Vue.component('create-component', __webpack_require__(/*! ./components/CreateComponent.vue */ "./resources/js/components/CreateComponent.vue")["default"]);
 Vue.component('show-component', __webpack_require__(/*! ./components/ShowComponent.vue */ "./resources/js/components/ShowComponent.vue")["default"]);
-Vue.component('edit-component', __webpack_require__(/*! ./components/EditComponent.vue */ "./resources/js/components/EditComponent.vue")["default"]);
+Vue.component('user-form', __webpack_require__(/*! ./components/UserForm.vue */ "./resources/js/components/UserForm.vue")["default"]);
 Vue.component('passport-clients', __webpack_require__(/*! ./components/passport/Clients.vue */ "./resources/js/components/passport/Clients.vue")["default"]);
 Vue.component('passport-authorized-clients', __webpack_require__(/*! ./components/passport/AuthorizedClients.vue */ "./resources/js/components/passport/AuthorizedClients.vue")["default"]);
 Vue.component('passport-personal-access-tokens', __webpack_require__(/*! ./components/passport/PersonalAccessTokens.vue */ "./resources/js/components/passport/PersonalAccessTokens.vue")["default"]);
@@ -52769,75 +53359,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CreateComponent_vue_vue_type_template_id_75da6b46___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CreateComponent_vue_vue_type_template_id_75da6b46___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/EditComponent.vue":
-/*!***************************************************!*\
-  !*** ./resources/js/components/EditComponent.vue ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _EditComponent_vue_vue_type_template_id_ad065790___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EditComponent.vue?vue&type=template&id=ad065790& */ "./resources/js/components/EditComponent.vue?vue&type=template&id=ad065790&");
-/* harmony import */ var _EditComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EditComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/EditComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _EditComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _EditComponent_vue_vue_type_template_id_ad065790___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _EditComponent_vue_vue_type_template_id_ad065790___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/EditComponent.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/EditComponent.vue?vue&type=script&lang=js&":
-/*!****************************************************************************!*\
-  !*** ./resources/js/components/EditComponent.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_EditComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./EditComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/EditComponent.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_EditComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/EditComponent.vue?vue&type=template&id=ad065790&":
-/*!**********************************************************************************!*\
-  !*** ./resources/js/components/EditComponent.vue?vue&type=template&id=ad065790& ***!
-  \**********************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EditComponent_vue_vue_type_template_id_ad065790___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./EditComponent.vue?vue&type=template&id=ad065790& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/EditComponent.vue?vue&type=template&id=ad065790&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EditComponent_vue_vue_type_template_id_ad065790___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_EditComponent_vue_vue_type_template_id_ad065790___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -53045,6 +53566,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ShowComponent_vue_vue_type_template_id_59cc4a25___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ShowComponent_vue_vue_type_template_id_59cc4a25___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/UserForm.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/components/UserForm.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _UserForm_vue_vue_type_template_id_08a5751a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UserForm.vue?vue&type=template&id=08a5751a& */ "./resources/js/components/UserForm.vue?vue&type=template&id=08a5751a&");
+/* harmony import */ var _UserForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UserForm.vue?vue&type=script&lang=js& */ "./resources/js/components/UserForm.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _UserForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _UserForm_vue_vue_type_template_id_08a5751a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _UserForm_vue_vue_type_template_id_08a5751a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/UserForm.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/UserForm.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/UserForm.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UserForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./UserForm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UserForm.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_UserForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/UserForm.vue?vue&type=template&id=08a5751a&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/UserForm.vue?vue&type=template&id=08a5751a& ***!
+  \*****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UserForm_vue_vue_type_template_id_08a5751a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./UserForm.vue?vue&type=template&id=08a5751a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UserForm.vue?vue&type=template&id=08a5751a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UserForm_vue_vue_type_template_id_08a5751a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_UserForm_vue_vue_type_template_id_08a5751a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

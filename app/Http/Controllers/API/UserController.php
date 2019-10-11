@@ -4,8 +4,11 @@ namespace App\Http\Controllers\API;
 
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\Rule;
 use App\Transformers\UserTransformer;
 use App\Http\Controllers\API\ApiController;
+
 
 class UserController extends ApiController
 {
@@ -27,14 +30,10 @@ class UserController extends ApiController
     /**
      * Show the form for creating a new resource.
      *
+     * @param \Illuminate\Http\Request $request
+     * @param \Illuminate\Http\User $user
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        return $this->safeCall(function() {
-            return fractal($users, new UserTransformer)->respond();
-        });
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -61,7 +60,7 @@ class UserController extends ApiController
 
             $user->save();
 
-            return fractal($users, new UserTransformer)->respond();
+            return fractal($user, new UserTransformer)->respond();
         });
     }
 
