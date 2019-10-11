@@ -40,7 +40,7 @@
 	</form> -->
 
 	<div id="app">
-        <create-component><?php echo e(csrf_field()); ?></create-component>
+        <user-form><?php echo e(csrf_field()); ?></user-form>
     </div>
 
 

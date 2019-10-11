@@ -1,7 +1,7 @@
 <?php $__env->startSection('content'); ?>
 
 	<div id="app">
-        <edit-component user_id="<?php echo e($id); ?>"><?php echo e(csrf_field()); ?></edit-component>
+        <user-form user_id="<?php echo e($id); ?>"><?php echo e(csrf_field()); ?></user-form>
     </div>
 
 <?php $__env->stopSection(); ?>

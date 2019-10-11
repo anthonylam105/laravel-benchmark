@@ -21,34 +21,18 @@
 
     <style type="text/css">
         .create {
-           margin: 30px;
+            color: #636b6f;
+            font-family: 'Nunito', sans-serif;
+            margin: 0 30px;
         }
         .create div {
             border-radius: 5px;
             background-color: #f2f2f2;
             padding: 20px;
         }
-        .create input[type=text] {
-            padding: 6px 12px;
-            width: 100%;
-        }
-        .create input[type=password] {
-            padding: 6px 12px;
-            width: 100%;
-        }
-        .create button {
-            color: black;
-            background-color: white;
-        }
-        .create button:hover {
-            color: white;
-            background-color: black;
-        }
-        .danger ul {
-            list-style: none;
-            color: red;
-        }
         .showUser {
+            color: #636b6f;
+            font-family: 'Nunito', sans-serif;
             margin: 0 25px;
         }
         .show-btns {
@@ -79,6 +63,8 @@
             color: #fff;
         }
         .tableEdit {
+            color: #636b6f;
+            font-family: 'Nunito', sans-serif;
             margin: 0 25px;
         }
         #users {
@@ -112,6 +98,12 @@
             padding: 6px 12px;
             width: 100%;
         }
+        .userForm input[type=password] {
+            border-radius: 3px;
+            margin-bottom: 10px;
+            padding: 6px 12px;
+            width: 100%;
+        }
         .userForm label {
             font-weight: bold;
         }
@@ -139,6 +131,9 @@
         .delete-btn button:hover {
             color: white;
             background-color: red;
+        }
+        .errorMsg {
+            color: red;
         }
     </style>
 
