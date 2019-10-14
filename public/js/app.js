@@ -2598,6 +2598,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         email: '',
         password: ''
       },
+      local: {//
+      },
       errors: {//
       }
     };
@@ -2611,6 +2613,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         _this.loggedIn = response.data.response;
         axios.get('/api/users/' + _this.user_id).then(function (response) {
           _this.user = response.data.data;
+          console.log(response.data.data);
+          _this.local = response.data.data.name;
+          console.log(_this.local);
         })["catch"](function (error) {
           console.log(error);
         });
@@ -39813,7 +39818,7 @@ var render = function() {
   return _c("div", [
     _vm.user_id != null
       ? _c("div", { staticClass: "tableEdit" }, [
-          _c("h1", [_vm._v("Update Information")]),
+          _c("h1", [_vm._v("Update " + _vm._s(this.local) + "'s Information")]),
           _vm._v(" "),
           _c("table", { attrs: { id: "users" } }, [
             _vm._m(0),

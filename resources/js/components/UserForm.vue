@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="tableEdit" v-if="user_id != null">
-	  		<h1>Update Information</h1>
+	  		<h1>Update {{ this.local }}'s Information</h1>
 			<table id="users">
 				<tr>
 					<th>Name</th>
@@ -68,6 +68,10 @@
         			password: ''
         		},
 
+        		local: {
+        			//
+        		},
+
         		errors: {
         			//
         		}
@@ -82,6 +86,9 @@
 		            axios.get('/api/users/' + this.user_id)
 			        .then((response) => {
 			            this.user = response.data.data
+			            console.log(response.data.data)
+			            this.local = response.data.data.name
+			            console.log(this.local)
 			        })
 			        .catch(function (error) {
 				        console.log(error)
